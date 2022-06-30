@@ -1,0 +1,30 @@
+@media only screen and (max-width: 700px) {
+  .menu__list {
+    justify-content: center;
+  }
+
+  .featured__secondary:nth-child(2),
+  .featured__secondary:nth-child(3),
+  .featured__secondary:nth-child(4),
+  .featured__secondary:nth-child(5) {
+    grid-column: none;
+    grid-row: none;
+    display: none;
+  }
+
+  .featured__main,
+  .featured__categories {
+    grid-column: 1 / 5;
+  }
+
+  .top-rated__content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top-rated__card {
+    width: 100%;
+    padding: 1rem 0.75rem;
+    margin-bottom: 1rem;
+  }
+}
